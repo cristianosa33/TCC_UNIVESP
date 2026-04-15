@@ -1,41 +1,45 @@
-# TCC_UNIVESP
+Plataforma Web de Monitoramento Ambiental Urbano - TCC UNIVESP
+Este projeto consiste em uma plataforma georreferenciada para o registro e monitoramento de demandas ambientais e de infraestrutura urbana. O objetivo é facilitar a comunicação entre cidadãos e a gestão pública através de dados precisos e visualização em mapas.
 
-Sistema de mapeamento de ocorrências urbanas com geolocalização.
+🚀 Funcionalidades Principais
+Mapeamento Interativo: Visualização de ocorrências (descarte de resíduos, poda de árvores, falhas na via) em tempo real.
 
----
+Registro Geolocalizado: Captura automática de coordenadas (Latitude e Longitude) via GPS do navegador.
 
-## 📌 Sobre o Projeto
+Gestão de Dados: Organização por níveis de criticidade e categorias.
 
-Este sistema foi desenvolvido como Trabalho de Conclusão de Curso (TCC), 
-com o objetivo de registrar ocorrências urbanas utilizando:
+Painel Administrativo: Interface para suporte à tomada de decisão baseada em evidências.
 
-- Geolocalização
-- Upload de imagens
-- Armazenamento estruturado
-- Visualização dinâmica em mapa
+📂 Estrutura do Repositório
+/frontend: Contém o index.html e arquivos de interface (Leaflet.js para o mapa).
 
----
+/backend: Lógica do servidor em Python (Flask) e processamento de rotas.
 
-## 📂 Estrutura do Projeto
+/database: Modelagem e scripts SQL para armazenamento das ocorrências.
 
-Para quem está acessando pela primeira vez, abaixo está a explicação das pastas do projeto:
-TCC_UNIVESP/
-│
-├── backend/
-│ → Contém o código do servidor e lógica do sistema.
-│ → Responsável por salvar dados e processar informações.
-│
-├── frontend/
-│ → Contém a interface do usuário.
-│ → Onde ficam as telas, botões e mapa interativo.
-│
-├── database/
-│ → Arquivos relacionados ao banco de dados.
-│ → Estrutura das tabelas e dados armazenados.
-│
-├── docs/
-│ → Documentação do projeto.
-│ → Diagramas, imagens e o arquivo do TCC.
-│
-├── README.md
-│ → Documento principal com explicações do projeto.
+/static: Arquivos estáticos (CSS, imagens de ícones e fotos das ocorrências).
+
+🛠️ Tecnologias Utilizadas
+Linguagem: Python 3.x
+
+Framework Web: Flask
+
+Mapa: Leaflet.js / OpenStreetMap
+
+Banco de Dados: SQLite (Protótipo)
+
+Análise de Dados: Pandas / Plotly (Futuro)
+
+📖 Como Rodar o Projeto (Guia para o Grupo)
+Certifique-se de ter o Python instalado.
+
+Instale as dependências necessárias:
+
+Bash
+pip install flask
+Acesse a pasta do projeto e execute o servidor:
+
+Bash
+python backend/app.py
+Abra o navegador no endereço: http://127.0.0.1:5000
+
